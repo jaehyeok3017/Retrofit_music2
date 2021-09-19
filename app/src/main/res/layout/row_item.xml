@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="track"
+            type="com.example.retrofit_music.Data.Track" />
+
+        <variable
+            name="artist"
+            type="com.example.retrofit_music.Data.Artist" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="#ffffff"
+    android:elevation="10dp">
+
+    <TextView
+        android:id="@+id/rankText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:text=""
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+
+        android:textSize="30sp"
+        android:text="@{artist.name}"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/rankText"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        />
+
+    <TextView
+        android:id="@+id/musicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="@{track.name}"
+
+        app:layout_constraintTop_toBottomOf="@+id/artistName"
+        app:layout_constraintLeft_toLeftOf="@+id/rankText"
+
+        android:layout_marginLeft="40dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
