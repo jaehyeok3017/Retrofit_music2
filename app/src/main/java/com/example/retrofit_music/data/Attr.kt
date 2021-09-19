@@ -1,4 +1,4 @@
-package com.example.retrofit_music.Data
+package com.example.retrofit_music.data
 
 import com.google.gson.annotations.SerializedName
 

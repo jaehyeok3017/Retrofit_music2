@@ -1,10 +1,8 @@
 package com.example.retrofit_music
 
-import com.example.retrofit_music.Data.TopTrackData
-import com.example.retrofit_music.Data.Track
+import com.example.retrofit_music.data.TopTrackData
 import retrofit2.Call
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface ServerInterface {

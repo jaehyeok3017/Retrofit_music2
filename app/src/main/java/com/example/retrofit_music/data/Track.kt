@@ -1,4 +1,4 @@
-package com.example.retrofit_music.Data
+package com.example.retrofit_music.data
 
 import com.google.gson.annotations.SerializedName
 
@@ -10,7 +10,6 @@ data class Track(
     val listeners: String,
     val mbid: String,
 
-    @SerializedName("name")
     val name: String,
 
     val playcount: String,

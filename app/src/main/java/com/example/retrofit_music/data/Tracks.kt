@@ -1,4 +1,4 @@
-package com.example.retrofit_music.Data
+package com.example.retrofit_music.data
 
 data class Tracks(
     val attr: Attr,

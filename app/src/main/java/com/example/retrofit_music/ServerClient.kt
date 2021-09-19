@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ServerClient {
     private const val baseUrl = "https://ws.audioscrobbler.com/"
 
-    private val retrofit:Retrofit = Retrofit.Builder()
+    val retrofit:Retrofit = Retrofit.Builder()
         .baseUrl(baseUrl)
         .addConverterFactory(GsonConverterFactory.create())
         .build()

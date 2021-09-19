@@ -3,11 +3,11 @@
     <data>
         <variable
             name="track"
-            type="com.example.retrofit_music.Data.Track" />
+            type="com.example.retrofit_music.data.Track" />
 
         <variable
             name="artist"
-            type="com.example.retrofit_music.Data.Artist" />
+            type="com.example.retrofit_music.data.Artist" />
     </data>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -30,7 +30,7 @@
         app:layout_constraintLeft_toLeftOf="parent"/>
 
     <TextView
-        android:id="@+id/artistName"
+        android:id="@+id/musicName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#000"
@@ -47,13 +47,13 @@
         />
 
     <TextView
-        android:id="@+id/musicName"
+        android:id="@+id/artistName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#000"
         android:text="@{track.name}"
 
-        app:layout_constraintTop_toBottomOf="@+id/artistName"
+        app:layout_constraintTop_toBottomOf="@+id/musicName"
         app:layout_constraintLeft_toLeftOf="@+id/rankText"
 
         android:layout_marginLeft="40dp"
